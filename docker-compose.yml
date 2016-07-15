@@ -1,5 +1,8 @@
 goxspk01:
-	build: .
-  	restart: always
-  	environment:
-		- OPENFIRE_VERSION=4.0.2
+  image: flexsolutions/sparck
+  ports:
+    - "9090:9090"
+    - "5222:5222"
+    - "7777:7777"
+  volumes:
+    - /srv/docker/openfire/openfire:/var/lib/openfire

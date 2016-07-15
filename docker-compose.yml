@@ -1,0 +1,5 @@
+goxspk01:
+	build: .
+  	restart: always
+  	environment:
+		- OPENFIRE_VERSION=4.0.2
